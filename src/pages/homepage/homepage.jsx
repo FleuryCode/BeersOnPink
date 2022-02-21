@@ -1,11 +1,11 @@
 import React from 'react';
-'./homepage.styles.scss';
+import './homepage.styles.scss';
 
 class Homepage extends React.Component {
     render() {
         return(
             <div className="homepageContainer">
-
+                <h1>Home</h1>
             </div>
         );
     }

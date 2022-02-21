@@ -3,9 +3,9 @@ import './donate.styles.scss';
 
 class Donate extends React.Component {
     render() {
-        return(
+        return (
             <div className="donateContainer">
-
+                <h1>Donate</h1>
             </div>
         );
     }
