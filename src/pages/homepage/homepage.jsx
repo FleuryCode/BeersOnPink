@@ -1,4 +1,5 @@
 import React from 'react';
+import PastYear from '../../components/pastyear/pastYear.component';
 import './homepage.styles.scss';
 
 class Homepage extends React.Component {
@@ -6,6 +7,7 @@ class Homepage extends React.Component {
         return(
             <div className="homepageContainer">
                 <h1>Home</h1>
+                <PastYear />
             </div>
         );
     }
