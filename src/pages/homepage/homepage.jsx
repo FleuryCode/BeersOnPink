@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Jumbotron from '../../components/jumbotron/jumbotron.component';
-import PastYear from '../../components/pastyear/pastYear.component';
+import PastYear from '../../components/pastYear/pastYear.component';
 import './homepage.styles.scss';
 
 class Homepage extends React.Component {
@@ -33,8 +33,20 @@ class Homepage extends React.Component {
                         <Link className='infoLink' to={'/'}>More information</Link>
                     </div>
                 </div>
+                <div className="row auctionContainer">
+                    <div className="col-12 mb-auto">
+                        <h2>AUCTION</h2>
+                    </div>
+                    <div className="col-12 mb-auto">
+                        <h3>No Current Auction</h3>
+                        <h4>More information coming soon!</h4>
+                    </div>
+                </div>
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-12 pastYearsContainer">
+                        <h2>PAST YEARS</h2>
+                    </div>
+                    <div className="col-12 pb-4 px-4 pt-2">
                         <PastYear />
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './pastYear.styles.scss';
-import SpecificPastYear from "../specific-pastyear/specific-pastYear.component";
+import SpecificPastYear from "../specificPastYear/specific-pastYear.component";
 
 
 const PastYear = () => {

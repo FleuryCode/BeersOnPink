@@ -38,4 +38,38 @@
             }
         }
     }
+
+    .auctionContainer {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2% 0;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../assets/bopAuctions.jpg);
+
+        h2 {
+            border-bottom: 1px solid #d268a4;
+            display: inline-block;
+            margin-top: 2%;
+            padding: 0.5% 1%;
+        }
+    }
+
+    .pastYearsContainer {
+        display: flex;
+        justify-content: center;
+        h2 {
+            text-align: center;
+            border-bottom: 1px solid #d268a4;
+            padding: 0.5% 1%;
+            display: inline-block;
+        }
+    }
 }
