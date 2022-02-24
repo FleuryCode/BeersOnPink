@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './specific-pastYear.styles.scss';
 import { Bop2019, Bop2018, Bop2017, Bop2016 } from "../../assets/pastYears/ImageArrays";
+import { Link } from "react-router-dom";
 
 
 
@@ -68,7 +69,16 @@ const SpecificPastYear = ({ year }) => {
             </div>
             {
                 images.map((image, index) => (
-                    <img className={`${index === imageIndex ? 'active image' : 'image'}`} key={index} src={image} alt="" />
+                    <div
+                        key={index}
+                        className={`${index === imageIndex ? 'active image-container' : 'image-container'}`}>
+                        <img className="background-image" src={image} alt="" />
+                        <Link className="image" to={'/'} >
+                            <img src={image} alt="" />
+                        </Link>
+
+                    </div>
+
                 ))
             }
 

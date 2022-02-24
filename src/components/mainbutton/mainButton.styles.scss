@@ -1,0 +1,23 @@
+.mainButtonContainer {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    background-color: #D268A4;
+    border: 2px solid #D268A4;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: 0.4s;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    h5 {
+        margin: 0;
+        color: white;
+    }
+}
