@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ContactForm from '../../components/contactForm/contactForm.component';
 import Jumbotron from '../../components/jumbotron/jumbotron.component';
 import PastYear from '../../components/pastYear/pastYear.component';
 import './homepage.styles.scss';
@@ -48,6 +49,11 @@ class Homepage extends React.Component {
                     </div>
                     <div className="col-12 pb-4 px-4 pt-2">
                         <PastYear />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-12">
+                        <ContactForm />
                     </div>
                 </div>
 
