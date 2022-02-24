@@ -6,8 +6,9 @@ import MainButton from "../mainbutton/mainButton.component";
 const Jumbotron = () => {
     return (
         <div className="jumbotronContainer container-fluid">
-            <div className="row">
-                <div className="col-4">
+            <div className="row mainInfo">
+                <div className="col-10 col-md-5">
+                    <img src={BoPSlogan} alt="Main slogan" />
                     <MainButton />
                 </div>
             </div>

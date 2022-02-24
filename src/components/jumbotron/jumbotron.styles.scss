@@ -1,5 +1,26 @@
 .jumbotronContainer {
     width: 100%;
     height: 50vh;
-    background-color: green;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../assets/pastYears/2019/bop_ABW_2019.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+    height: 100vh;
+
+    .mainInfo {
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+    }
+
+    // Media Queries
+    @media (min-width: 768px) {
+        .mainInfo {
+            justify-content: flex-end;
+            padding-right: 10%;
+        }
+      }
 }
