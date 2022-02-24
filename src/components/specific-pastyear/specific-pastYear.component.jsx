@@ -63,7 +63,9 @@ const SpecificPastYear = ({ year }) => {
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
         >
-            <h5>{year}</h5>
+            <div className="text-container">
+                <h5>{year}</h5>
+            </div>
             {
                 images.map((image, index) => (
                     <img className={`${index === imageIndex ? 'active image' : 'image'}`} key={index} src={image} alt="" />
