@@ -1,0 +1,14 @@
+.customInputContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .inputField {
+        width: 90%;
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+        margin-bottom: 2%;
+        padding: 2%;
+    }
+}
