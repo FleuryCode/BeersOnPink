@@ -1,0 +1,35 @@
+.footerContainer {
+    height: 100%;
+    width: 100%;
+    background-color: #F2F2F2;
+
+    .footerNav {
+        display: flex;
+        justify-content: space-evenly;
+
+        .footerNavLink {
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            margin: 2% 0;
+            transition: 0.4s;
+            &:hover {
+                color: #d268a4;
+            }
+        }
+    }
+
+    .socialLogos {
+        display: flex;
+        justify-content: center;
+
+        a{
+            margin: 1% 1%;
+            img{
+                height: 28px;
+                width: auto;
+            }
+        }
+        
+    }
+}
