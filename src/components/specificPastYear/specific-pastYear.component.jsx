@@ -50,7 +50,7 @@ const SpecificPastYear = ({ year }) => {
                 updateIndex(imageIndex + 1);
             }
 
-        }, 4000);
+        }, 3000);
         return () => {
             clearInterval(interval);
 
