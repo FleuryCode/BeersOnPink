@@ -51,7 +51,7 @@ class Homepage extends React.Component {
                         <PastYear />
                     </div>
                 </div>
-                <div className="row">
+                <div className="row contactContainer">
                     <div className="col-12">
                         <ContactForm />
                     </div>
