@@ -7,15 +7,18 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 4%;
 
     h2 {
         text-align: center;
         color: white;
-        margin-top: 1%;
+        border-bottom: #d268a4 1px solid;
+        display: inline-block;
+        padding: 0.5% 1%;
     }
 
     label {
-        color: white;
+        color: #ef9ec4;
         margin-left: 5%;
         margin-bottom: 1%;
         font-weight: 700;
