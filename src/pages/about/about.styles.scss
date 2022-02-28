@@ -1,0 +1,24 @@
+.aboutContainer {
+    width: 100%;
+    .aboutHeader {
+        height: 100vh;
+        background-image: url(../../assets/aboutHeaderImage.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        h1 {
+            margin-bottom: 15%;
+            margin-right: 10%;
+            color: white;
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+            font-size: 300%;
+            text-transform: uppercase;
+            span {
+                color: #ef9ec4;
+            }
+        }
+    }
+}

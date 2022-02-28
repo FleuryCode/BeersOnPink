@@ -13,7 +13,7 @@
     .mainInfo {
         display: flex;
         justify-content: center;
-        padding-top: 10%;
+        padding-top: 20%;
     }
 
     // Media Queries
@@ -21,6 +21,7 @@
         .mainInfo {
             justify-content: flex-end;
             padding-right: 10%;
+            padding-top: 10%;
         }
       }
 }

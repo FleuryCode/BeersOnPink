@@ -9,11 +9,13 @@ import Donate from './pages/donate/donate';
 import PastYears from './pages/pastyears/pastyears';
 import Contact from './pages/contact/contact';
 import Navigation from './components/navigation/navigation.component';
+import MobileNavigation from './components/navigationMobile/navigationMobile.component';
 
 function App() {
   return (
     <div className="App">
       <Navigation />
+      <MobileNavigation />
       <Routes>
         <Route exact path={'/'} element={<Homepage/>} />
         <Route exact path={'/about'} element={<About/>} />
