@@ -55,6 +55,8 @@
             img {
                 height: 80%;
                 max-width: 90%;
+                object-fit: cover;
+                object-position: center;
                 box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
             }
         }
