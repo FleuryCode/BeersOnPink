@@ -1,7 +1,7 @@
 import React from "react";
 import './jumbotron.styles.scss';
 import BoPSlogan from '../../assets/bopSlogan.svg';
-import MainButton from "../mainButton/mainButton.component";
+import MainButton from '../mainbutton/mainButton.component';
 
 const Jumbotron = () => {
     return (
