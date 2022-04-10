@@ -29,7 +29,7 @@ const MobileNavigation = () => {
                     <Link className='mobileNavLink' to={'/'}>Auction</Link>
                     <Link className='mobileNavLink' to={'/'}>Donate</Link>
                     <Link className='mobileNavLink' to={'/'}>Past Years</Link>
-                    <Link className='mobileNavLink' to={'/'}>Contact</Link>
+                    <Link className='mobileNavLink' to={'/#contact'}>Contact</Link>
                 </div>
             </div>
         </div>

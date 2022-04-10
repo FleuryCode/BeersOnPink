@@ -12,7 +12,7 @@ const Navigation = () => {
                     <Link className="nav-item" to={'/auction'}>Auction</Link>
                     <Link className="nav-item" to={'/donate'}>Donate</Link>
                     <Link className="nav-item" to={'/past-years'}>Past Years</Link>
-                    <Link className="nav-item" to={'/contact'}>Contact</Link>
+                    <Link className="nav-item" to={'/#contact'}>Contact</Link>
                 </nav>
             </div>
         </div>

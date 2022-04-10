@@ -7,7 +7,6 @@ import About from './pages/about/about';
 import Auction from './pages/about/about';
 import Donate from './pages/donate/donate';
 import PastYears from './pages/pastyears/pastyears';
-import Contact from './pages/contact/contact';
 import Navigation from './components/navigation/navigation.component';
 import MobileNavigation from './components/navigationMobile/navigationMobile.component';
 
@@ -22,7 +21,6 @@ function App() {
         <Route exact path={'/auction'} element={<Auction/>} />
         <Route exact path={'/donate'} element={<Donate/>} />
         <Route exact path={'/past-years'} element={<PastYears/>} />
-        <Route exact path={'/contact'} element={<Contact/>} />
       </Routes>
     </div>
   );
