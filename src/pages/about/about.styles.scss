@@ -28,15 +28,26 @@
             margin-top: 8%;
         }
         .ownerImageContainer {
-            max-height: 18vh;
-            width: 100%;    
+            min-width: 20%;
+            max-width: 30%;    
             img {
-                height: 100%;
                 width: 100%;
-                border-radius: 50%;
-                clip-path: circle();
-                object-fit: contain;
+
             }
+        }
+    }
+
+    .whereDoesMoneyGoContainer {
+        background-image: url(../../assets/moneyGoBanner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        h2 {
+            text-align: center;
+            color: white;
+        }
+        p {
+            color: white;
+            font-size: 120%;
         }
     }
 }

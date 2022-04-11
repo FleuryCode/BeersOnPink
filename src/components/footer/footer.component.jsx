@@ -11,11 +11,11 @@ const Footer = () => {
                 <div className="col-8">
                     <div className="footerNav">
                         <Link className='footerNavLink' to={'/'}>Home</Link>
-                        <Link className='footerNavLink' to={'/'}>About</Link>
-                        <Link className='footerNavLink' to={'/'}>Auction</Link>
-                        <Link className='footerNavLink' to={'/'}>Donate</Link>
-                        <Link className='footerNavLink' to={'/'}>Past Years</Link>
-                        <Link className='footerNavLink' to={'/'}>Contact</Link>
+                        <Link className='footerNavLink' to={'/about'}>About</Link>
+                        <Link className='footerNavLink' to={'/auction'}>Auction</Link>
+                        <Link className='footerNavLink' to={'/donate'}>Donate</Link>
+                        <Link className='footerNavLink' to={'/past-years'}>Past Years</Link>
+                        <Link className='footerNavLink' to={'/#contact'}>Contact</Link>
                     </div>
                 </div>
             </div>
