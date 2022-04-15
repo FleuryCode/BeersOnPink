@@ -1,6 +1,7 @@
 import React from "react";
 import './about.styles.scss';
 import JFleuryProfile from '../../assets/jfleuryProfile.png';
+import Footer from '../../components/footer/footer.component';
 
 const About = () => {
     return (
@@ -42,6 +43,31 @@ const About = () => {
                 </div>
                 <div className="col-12 col-md-4 p-5">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ad dolores tempore aliquid quos adipisci commodi maxime nobis quidem exercitationem cupiditate, et cum alias ea iste rerum optio, maiores asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio atque suscipit eligendi expedita nihil corrupti consequuntur, sunt eum voluptate aliquid! Explicabo quas veniam vitae quisquam molestiae labore incidunt tempora quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit possimus unde aliquam explicabo velit earum ipsam beatae similique dignissimos ea! Hic quasi aperiam sequi fuga possimus impedit facere aut. Nostrum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae corporis aperiam ipsa obcaecati, recusandae aut quod natus? Soluta reprehenderit mollitia nostrum voluptatum nam, amet ut earum numquam assumenda ullam eius!</p>
+                </div>
+            </div>
+            <div className="row specialThanks p-5">
+                <div className="col-12 d-flex justify-content-center">
+                    <h2>A SPECIAL THANK YOU</h2>
+                </div>
+                <div className="col-12 col-md-4 p-5">
+                    <h4>Marie-Christine Fleury</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quos minus consequuntur molestiae eaque qui nisi debitis officiis minima, corporis obcaecati nihil, accusantium deserunt possimus doloribus sunt, molestias quasi assumenda.</p>
+                </div>
+                <div className="col-12 col-md-4 p-5">
+                    <h4>Rhodes Gibson</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor tempora veritatis laboriosam harum magnam ipsum deserunt obcaecati aperiam laborum, dolorem fugit. Repellat ducimus dolores harum ea mollitia omnis nam!</p>
+                </div>
+                <div className="col-12 col-md-4 p-5">
+                    <h4>Samantha Heligman</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut veniam excepturi sequi esse adipisci inventore quia dolorum similique dolore nulla atque, omnis, enim qui aliquam autem ut. Eveniet, vero.</p>
+                </div>
+                <div className="col-12">
+                    <h4 className="text-center">All the amazing breweries! <br /> We couldn't do it without you</h4>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-12">
+                    <Footer />
                 </div>
             </div>
         </div>
