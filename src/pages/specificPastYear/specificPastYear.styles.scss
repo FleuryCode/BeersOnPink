@@ -1,0 +1,54 @@
+.specificPastYearPageContainer {
+    background-image: linear-gradient(#85586d, rgba(255, 255, 255, 0));
+    padding-top: 12vh;
+    height: 100%;
+    position: relative;
+
+    .selectedImageModule {
+        width: 100vw;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        justify-content: center;
+        padding-top: 12%;
+        .imageModule {
+            max-width: 90%;
+            border-radius: 12px;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+            
+        }
+    }
+
+    .yearNavigation {
+        .yearNavLink {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-size: 120%;
+            transition: color 0.3s ease-in-out;
+            &:hover {
+                color: #ef9ec4;
+            }
+
+            &.activeYear {
+                font-size: 200%;
+                color: #ef9ec4;
+            }
+        }
+    }
+
+    .imageHolder {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 90%;
+            margin: 4% 0;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+        }
+    }
+}

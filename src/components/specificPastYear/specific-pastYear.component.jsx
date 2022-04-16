@@ -73,7 +73,7 @@ const SpecificPastYear = ({ year }) => {
                         key={index}
                         className={`${index === imageIndex ? 'active image-container' : 'image-container'}`}>
                         <img className="background-image" src={image} alt="" />
-                        <Link className="image" to={'/'} >
+                        <Link className="image" to={`/pastyear/${year}`} >
                             <img src={image} alt="" />
                         </Link>
 

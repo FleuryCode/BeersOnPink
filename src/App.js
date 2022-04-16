@@ -6,9 +6,9 @@ import Homepage from './pages/homepage/homepage';
 import About from './pages/about/about';
 import Auction from './pages/about/about';
 import Donate from './pages/donate/donate';
-import PastYears from './pages/pastyears/pastyears';
 import Navigation from './components/navigation/navigation.component';
 import MobileNavigation from './components/navigationMobile/navigationMobile.component';
+import SpecificPastYearPage from './pages/specificPastYear/specificPastYear';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route exact path={'/about'} element={<About/>} />
         <Route exact path={'/auction'} element={<Auction/>} />
         <Route exact path={'/donate'} element={<Donate/>} />
-        <Route exact path={'/past-years'} element={<PastYears/>} />
+        <Route path={'/pastyear/:pastYear'} element={<SpecificPastYearPage />} />
       </Routes>
     </div>
   );

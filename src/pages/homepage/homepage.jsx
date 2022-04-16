@@ -56,7 +56,7 @@ const Homepage = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-12 pastYearsContainer">
+                <div id='pastyears' className="col-12 pastYearsContainer">
                     <h2>PAST YEARS</h2>
                 </div>
                 <div className="col-12 pb-4 px-4 pt-2">
