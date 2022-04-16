@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './specificPastYear.styles.scss';
 import { Link, useLocation } from "react-router-dom";
 import { Bop2019, Bop2018, Bop2017, Bop2016 } from "../../assets/pastYears/ImageArrays";
@@ -7,6 +7,9 @@ const SpecificPastYearPage = () => {
     const [selectedImage, setSelectedImage] = useState('');
     const [displayModule, setDisplayModule] = useState(false);
     const location = useLocation().pathname;
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location]);
     let images = [];
     let imageFolder = null;
     let activeYear = null;
