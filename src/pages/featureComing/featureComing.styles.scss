@@ -1,0 +1,12 @@
+.featureComingContainer {
+    background-image: linear-gradient(#85586d, rgba(255, 255, 255, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .featureComingText {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

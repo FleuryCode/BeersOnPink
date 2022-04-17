@@ -9,6 +9,7 @@ import Donate from './pages/donate/donate';
 import Navigation from './components/navigation/navigation.component';
 import MobileNavigation from './components/navigationMobile/navigationMobile.component';
 import SpecificPastYearPage from './pages/specificPastYear/specificPastYear';
+import FeatureComing from './pages/featureComing/featureComing';
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
       <Routes>
         <Route exact path={'/'} element={<Homepage/>} />
         <Route exact path={'/about'} element={<About/>} />
-        <Route exact path={'/auction'} element={<Auction/>} />
-        <Route exact path={'/donate'} element={<Donate/>} />
+        <Route exact path={'/auction'} element={<FeatureComing/>} />
+        <Route exact path={'/donate'} element={<FeatureComing/>} />
         <Route path={'/pastyear/:pastYear'} element={<SpecificPastYearPage />} />
       </Routes>
     </div>
