@@ -32,18 +32,18 @@ const Homepage = () => {
                 </div>
                 <div className="col-12 col-md-4 infoBox">
                     <h4>Where does the money go?</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, facilis officiis dolore vitae asperiores porro suscipit cumque reprehenderit assumenda architecto natus corporis vero amet numquam ipsam, libero perferendis, optio cupiditate!</p>
+                    <p>When Beers on Pink was hosted in the United States, all funds would be given to the National Breast Cancer Foundation. They are an organization that focuses on getting the funds to women (and men) to get tested early. The reason we picked an organization like this is because they are plenty devoted to research and less that are trying to get information...</p>
                 </div>
                 <div className="col-12 col-md-4 infoBox">
                     <h4>How it started</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tenetur eos praesentium dolorum architecto, soluta quibusdam quae voluptas eaque iure, aliquam non officia error quam ipsum ab libero sed sunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad explicabo deserunt quia praesentium fuga, magni sit distinctio molestiae odio a corporis repudiandae eaque alias accusantium consectetur, voluptates vero itaque dignissimos.</p>
+                    <p>Beers on Pink started with photographer Julien Fleury. His mother Christine Fleury had been diagnosed with stage four breast cancer. While taking care of his mother, Julien was trying to find ways of using his skills as a food and beverage photographer to help in any way he could. One day while having coffee with Rhodes Gibson, he came up with the idea of photographing a bunch of different local beers on a pink background. These images...</p>
                 </div>
                 <div className="col-12 col-md-4 infoBox">
                     <h4>How we raise money</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nobis expedita odio, blanditiis tempora cupiditate quae ipsum ipsa eaque officia reiciendis laborum. Perspiciatis porro sapiente fugiat distinctio animi, debitis praesentium.</p>
+                    <p>So how do we do it? How do we go from the photo of the beer to throwing an epic fundraiser and getting money to help others? Very simple really! Our photographer Julien takes 12 local breweries, photographs one beer chosen by the brewery, in a custom ceramic cup on a pink background. Custom prints are then made and auctioned off the night of the event along with the custom ceramic cups...</p>
                 </div>
                 <div className="col-3 me-auto ps-3">
-                    <Link className='infoLink' to={'/'}>More information</Link>
+                    <Link className='infoLink' to={'/about'}>More information</Link>
                 </div>
             </div>
             <div className="row auctionContainer">
