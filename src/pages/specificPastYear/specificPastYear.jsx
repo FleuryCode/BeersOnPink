@@ -43,8 +43,6 @@ const SpecificPastYearPage = () => {
         setSelectedImage(image);
         setDisplayModule(true);
     }
-    console.log(selectedImage);
-    console.log(displayModule);
     return (
         <div className="specificPastYearPageContainer container-fluid">
             <div onClick={() => setDisplayModule(false)} className={`${displayModule ? 'd-flex' : 'd-none'} selectedImageModule`}>

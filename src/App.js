@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 // PAGES
 import Homepage from './pages/homepage/homepage';
 import About from './pages/about/about';
-import Auction from './pages/about/about';
+import Auction from './pages/auction/auction';
 import Donate from './pages/donate/donate';
 import Navigation from './components/navigation/navigation.component';
 import MobileNavigation from './components/navigationMobile/navigationMobile.component';
