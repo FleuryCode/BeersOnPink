@@ -122,6 +122,9 @@ const ContactForm = () => {
                                 <SendArrowButton onClick={sendMessageButtonClick} messageSending={messageSending} />
                             </div>
                         </div>
+                        <div className={`${messageSent ? 'd-flex' : 'd-none'} col-12 justify-content-center`}>
+                            <h5 className="displayMessage" >{displayMessage}</h5>
+                        </div>
                     </div>
                 </form>
             </div>
