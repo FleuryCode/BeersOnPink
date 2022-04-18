@@ -10,6 +10,7 @@ const Homepage = () => {
     // SEO DATA
     useEffect(() => {
         document.title = "Beers on Pink | Breast Cancer Fundraiser";
+        document.querySelector('meta[name="description"]').setAttribute("content", "Beers on Pink is a breast cancer fundraiser. Originally started by Julien Fleury in Austin, Texas as a way to raise funds through his photography of craft beer. Beers on Pink became an annual event that featured craft brewery beers photographed on a pink background, after the images were auctioned off to raise money. Now transitioning to Nice, France!");
     },[]);
     // Setting up AutoScroll
     const location = useLocation();

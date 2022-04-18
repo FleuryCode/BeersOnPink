@@ -10,6 +10,7 @@ const SpecificPastYearPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location]);
+    
     let images = [];
     let imageFolder = null;
     let activeYear = null;
@@ -34,6 +35,13 @@ const SpecificPastYearPage = () => {
         default:
             break;
     }
+
+    // SEO DATA
+    useEffect(() => {
+        document.title = `Beers on Pink | Year ${activeYear} Images`;
+        document.querySelector('meta[name="description"]').setAttribute("content", `Beers on Pink images from the year ${activeYear}`);
+    },[location]);
+
     let keys = Object.keys(imageFolder);
     keys.forEach((key) => {
         images.push(imageFolder[key]);
