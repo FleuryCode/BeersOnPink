@@ -5,6 +5,8 @@ import CustomInput from "../customInput/customInput.component";
 import CustomTextField from "../customTextField/customTextField.component";
 import ReCAPTCHA from 'react-google-recaptcha';
 import { KEYS } from "../../Keys";
+import axios from 'axios';
+import SendArrowButton from "../sendArrowButton/sendArrowButton.component";
 
 const ContactForm = () => {
     const [name, setName] = useState('');
@@ -13,6 +15,7 @@ const ContactForm = () => {
     const [recaptchaToken, setRecaptchaToken] = useState('');
     const [displayMessage, setDisplayMessage] = useState('');
     const [messageSent, setMessageSent] = useState(false);
+    const [messageSending, setMessageSending] = useState(false);
 
     // On Input Change
     const onInputChangeHandle = (event) => {
@@ -35,12 +38,49 @@ const ContactForm = () => {
     // Recaptcha
     const recaptchaRef = React.useRef();
     const recaptchaKey = KEYS.recpatchaKey;
-    const updateRecpatcha  = (token) => {
+    const updateRecpatcha = (token) => {
         setRecaptchaToken(token);
     };
     // Formspark
     const formSparkId = KEYS.formSparkID;
     const formSparkUrl = `https://submit-form.com/${formSparkId}`;
+
+    // Axios Sending
+    const sendAxiosMessage = async () => {
+        const payload = {
+            email: email,
+            name: name,
+            message: message,
+            "g-recaptcha-response": recaptchaToken
+        };
+
+        // Sending to FormSpark Servers
+        try {
+            await axios.post(formSparkUrl, payload);
+            // Reset Input Fields
+            setEmail('');
+            setName('');
+            setMessage('');
+            setDisplayMessage('Thank you for your message!');
+            setMessageSent(true);
+        } catch (error) {
+            console.log(error);
+            setDisplayMessage('Sorry, something went wrong.');
+            setMessageSent(true);
+        }
+    };
+
+    const sendMessageButtonClick = async (event) => {
+        if (email !== '' && name !== '' && message !== '') {
+            event.preventDefault();
+            setMessageSending(true);
+            await sendAxiosMessage();
+            setMessageSending(false);
+        } else {
+            setMessageSent(true);
+            setDisplayMessage('Please fill in all the fields');
+        }
+    };
     return (
         <div className="contactFormContainer container-fluid">
             <div className="row">
@@ -67,15 +107,20 @@ const ContactForm = () => {
                         <div className="col-12">
                             <CustomTextField id={'message'} name={'message'} placeholder={'Message'} value={message} onChange={onInputChangeHandle} />
                         </div>
-                        <div className="col-6">
+                        <div className="col-12 col-md-6 ms-auto me-md-0 ms-md-0 me-auto d-flex justify-content-center">
                             <ReCAPTCHA
-                            ref={recaptchaRef}
-                            sitekey={recaptchaKey}
-                            onChange={updateRecpatcha}
+                                ref={recaptchaRef}
+                                sitekey={recaptchaKey}
+                                onChange={updateRecpatcha}
                             />
                         </div>
-                        <div className="col-2 ms-auto me-auto">
-                            <CustomButton staticMessage={'Send Message'} />
+                        <div className="col-12 col-md-2 ms-auto me-auto mt-4 mt-md-0">
+                            <div className="sendButtonContainer d-none d-md-flex">
+                                <CustomButton onClick={sendMessageButtonClick} messageSending={messageSending} staticMessage={'Send Message'} />
+                            </div>
+                            <div className="sendArrowContainer d-flex d-md-none justify-content-center">
+                                <SendArrowButton onClick={sendMessageButtonClick} messageSending={messageSending} />
+                            </div>
                         </div>
                     </div>
                 </form>
