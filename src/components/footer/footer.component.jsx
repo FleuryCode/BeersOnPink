@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="socialLogos">
-                        <a href="https://www.instagram.com/beersonpink/">
+                        <a target={'_blank'} href="https://www.instagram.com/beersonpink/">
                             <img src={InstaLogo} alt="Instagram Logo" />
                         </a>
                         <a href="mailto:julien@fleuryphotography.com">

@@ -30,7 +30,7 @@ const About = () => {
                     <div className="container">
                         <div className="row mt-4 mt-md-0">
                             <div className="col-4 col-md-12">
-                                <h4>Julien Fleury</h4>
+                                <a className="julienName" href="https://fleuryphotography.com" target={'_blank'}><h4>Julien Fleury</h4></a>
                                 <h5>Creator/Photographer</h5>
                             </div>
                             <div className="col-6 col-md-12 ms-auto">
