@@ -1,13 +1,19 @@
 import React, { useState } from "react";
+import './contactForm.styles.scss';
 import CustomButton from "../customButton/customButton.component";
 import CustomInput from "../customInput/customInput.component";
 import CustomTextField from "../customTextField/customTextField.component";
-import './contactForm.styles.scss';
+import { ReCAPTCHA } from 'react-google-recaptcha';
+import { KEYS } from "../../Keys";
+
 
 const ContactForm = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [recaptchaToken, setRecaptchaToken] = useState('');
+    const [displayMessage, setDisplayMessage] = useState('');
+    const [messageSent, setMessageSent] = useState(false);
 
     // On Input Change
     const onInputChangeHandle = (event) => {
@@ -26,6 +32,16 @@ const ContactForm = () => {
                 break;
         }
     }
+
+    // Recaptcha
+    const recaptchaRef = React.useRef();
+    const recaptchaKey = KEYS.recpatchaKey;
+    const updateRecpatcha  = (token) => {
+        setRecaptchaToken(token);
+    };
+    // Formspark
+    const formSparkId = KEYS.formSparkID;
+    const formSparkUrl = `https://submit-form.com/${formSparkId}`;
     return (
         <div className="contactFormContainer container-fluid">
             <div className="row">
@@ -51,6 +67,13 @@ const ContactForm = () => {
                         </div>
                         <div className="col-12">
                             <CustomTextField id={'message'} name={'message'} placeholder={'Message'} value={message} onChange={onInputChangeHandle} />
+                        </div>
+                        <div className="col-6">
+                            <ReCAPTCHA
+                            ref={recaptchaRef}
+                            sitekey={recaptchaKey}
+                            onChange={updateRecpatcha}
+                            />
                         </div>
                         <div className="col-2 ms-auto me-auto">
                             <CustomButton staticMessage={'Send Message'} />
