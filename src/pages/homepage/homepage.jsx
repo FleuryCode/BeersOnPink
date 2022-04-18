@@ -7,6 +7,10 @@ import PastYear from '../../components/pastYear/pastYear.component';
 import './homepage.styles.scss';
 
 const Homepage = () => {
+    // SEO DATA
+    useEffect(() => {
+        document.title = "Beers on Pink | Breast Cancer Fundraiser";
+    },[]);
     // Setting up AutoScroll
     const location = useLocation();
     useEffect(() => {

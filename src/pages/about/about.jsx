@@ -5,6 +5,11 @@ import Footer from '../../components/footer/footer.component';
 import { useLocation } from "react-router-dom";
 
 const About = () => {
+    // SEO DATA
+    useEffect(() => {
+        document.querySelector('meta[name="description"]').setAttribute("content", "About Beers on Pink. How it was started by Julien Fleury, how we raise money to help support the brave people fighting breast cancer every day and all the information about where the money goes.");
+        document.title = "About Beers on Pink";
+    },[]);
     const location = useLocation().pathname;
     useEffect(() => {
         window.scrollTo(0, 0);
