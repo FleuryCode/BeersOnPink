@@ -3,7 +3,7 @@ import './contactForm.styles.scss';
 import CustomButton from "../customButton/customButton.component";
 import CustomInput from "../customInput/customInput.component";
 import CustomTextField from "../customTextField/customTextField.component";
-import { ReCAPTCHA } from 'react-google-recaptcha';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { KEYS } from "../../Keys";
 
 const ContactForm = () => {
