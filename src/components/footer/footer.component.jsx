@@ -14,7 +14,7 @@ const Footer = () => {
                         <Link className='footerNavLink' to={'/about'}>About</Link>
                         <Link className='footerNavLink' to={'/auction'}>Auction</Link>
                         <Link className='footerNavLink' to={'/donate'}>Donate</Link>
-                        <Link className='footerNavLink' to={'/past-years'}>Past Years</Link>
+                        <Link className='footerNavLink' to={'/#pastyears'}>Past Years</Link>
                         <Link className='footerNavLink' to={'/#contact'}>Contact</Link>
                     </div>
                 </div>

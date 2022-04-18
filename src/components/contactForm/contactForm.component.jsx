@@ -6,7 +6,6 @@ import CustomTextField from "../customTextField/customTextField.component";
 import { ReCAPTCHA } from 'react-google-recaptcha';
 import { KEYS } from "../../Keys";
 
-
 const ContactForm = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
