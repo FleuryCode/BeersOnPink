@@ -1,11 +1,11 @@
 
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://j-squaredstudios.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://beersonpink.com/$1 [R=301,L]
 
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.j-squaredstudios.com$ [NC]
-RewriteRule ^(.*)$ http://j-squaredstudio.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.beersonpink.com$ [NC]
+RewriteRule ^(.*)$ http://beersonpink.com/$1 [R=301,L]
 
 
 # mod_rewrite starts here
